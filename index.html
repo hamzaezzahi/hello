@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>أدخل معلوماتك ليتعرّف عليك السيد حمزة الزاهي</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <h1>أدخل معلوماتك ليتعرّف عليك السيد <span>حمزة الزاهي</span></h1>
+      <p>رجاءً املأ الاستمارة بالبيانات الصحيحة</p>
+    </header>
+
+    <main class="form-card">
+      <form action="#" method="post">
+        <div class="field">
+          <input type="text" id="fname" name="fname" placeholder=" " required>
+          <label for="fname">الاسم الشخصي</label>
+        </div>
+
+        <div class="field">
+          <input type="text" id="lname" name="lname" placeholder=" " required>
+          <label for="lname">النسب</label>
+        </div>
+
+        <div class="field">
+          <input type="email" id="email" name="email" placeholder=" " required>
+          <label for="email">البريد الإلكتروني</label>
+        </div>
+
+        <div class="field">
+          <input type="tel" id="phone" name="phone" placeholder=" " required>
+          <label for="phone">رقم الهاتف</label>
+        </div>
+
+        <div class="field">
+          <input type="text" id="city" name="city" placeholder=" " required>
+          <label for="city">المدينة</label>
+        </div>
+
+        <div class="field">
+          <textarea id="about" name="about" placeholder=" "></textarea>
+          <label for="about">نبذة عنك</label>
+        </div>
+
+        <div class="actions">
+          <button type="submit">إرسال المعلومات</button>
+          <button type="reset" class="secondary">تفريغ</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> — موقع مصمم باحترافية لجمع معلومات المستخدم</p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
